@@ -10,17 +10,91 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: #4caf4f;
+  --color-secondary: #263238;
+  --color-info: #2194f3;
+  --color-Warning: #fbc02d;
+  --color-Error: #e53835;
+  --color-Success: #2e7d31;
+  --color-shade1: #43a046;
+  --color-shade2: #388e3b;
+  --color-shade3: #237d31;
+  --color-shade4: #1b5e1f;
+  --color-shade5: #103e13;
+  --color-tint1: #66bb69;
+  --color-tint2: #81c784;
+  --color-tint3: #a5d6a7;
+  --color-tint4: #c8e6c9;
+  --color-tint5: #e8f5e9;
+  --color-grey: #717171;
+  --color-d_grey: #4d4d4d;
+  --color-l_grey: #89939e;
+  --color-b_grey: #abbed1;
+  --color-silver: #f5f7fa;
+  --color-nblack: #263238;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inter;
+  font-weight: 400;
+}
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4.75rem;
+}
+h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+h3 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@theme shadows {
+  --shadow-2px: 0px 2px 4px rgba(171, 190, 209, 0.6);
+  --shadow-4px: 0px 4px 8px rgba(171, 190, 209, 0.4);
+  --shadow-6px: 0px 6px 12px rgba(171, 190, 209, 0.3);
+  --shadow-8px: 0px 8px 16px rgba(171, 190, 209, 0.4);
+  --shadow-16px: 0px 16px 32px rgba(171, 190, 209, 0.3);
+}
+
+@utility text-headline4 {
+  @apply text-[1.25rem] leading-[1.75rem] font-semibold;
+}
+
+@utility text-Regularbody1 {
+  @apply text-[18px] leading-[28px] font-normal;
+}
+@utility text-Regularbody2 {
+  @apply text-[16px] leading-[24px] font-normal;
+}
+@utility text-Regularbody3 {
+  @apply text-[14px] leading-[20px] font-normal;
+}
+@utility text-Regularbody4 {
+  @apply text-[12px] leading-[16px] font-normal;
+}
+
+@utility text-Mediumbody1 {
+  @apply text-[18px] leading-[28px] font-medium;
+}
+@utility text-Mediumbody2 {
+  @apply text-[16px] leading-[24px] font-medium;
+}
+@utility text-Mediumbody3 {
+  @apply text-[14px] leading-[20px] font-medium;
+}
+@utility text-Mediumbody4 {
+  @apply text-[12px] leading-[16px] font-medium;
 }
