@@ -40,13 +40,7 @@ type IconProps = {
   type?: "sun" | "arrow" | "plus" | "search";
 };
 
-export function Icon({ type, intent, disabled }: IconProps) {
-  const strokeColor = disabled
-    ? "#abbed1"
-    : intent === "primary"
-    ? "white"
-    : "#4caf4f";
-
+export function Icon({ type }: IconProps) {
   if (type === "sun") {
     return (
       <svg
@@ -58,56 +52,56 @@ export function Icon({ type, intent, disabled }: IconProps) {
       >
         <path
           d="M12 2L12 5"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M12 19L12 22"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M22 12L19 12"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M5 12L2 12"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M19.071 4.92893L16.9497 7.05025"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M7.05003 16.95L4.92871 19.0713"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M4.92897 4.92893L7.05029 7.05025"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M16.9495 16.95L19.0708 19.0713"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -127,7 +121,7 @@ export function Icon({ type, intent, disabled }: IconProps) {
       >
         <path
           d="M16 16L19.2929 12.7071C19.6834 12.3166 19.6834 11.6834 19.2929 11.2929L16 8M19 12L5 12"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
         />
@@ -146,14 +140,14 @@ export function Icon({ type, intent, disabled }: IconProps) {
       >
         <path
           d="M8 3.33331L8 12.6666"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.1"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M12.6667 8L3.33341 8"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.1"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -174,14 +168,14 @@ export function Icon({ type, intent, disabled }: IconProps) {
           cx="11"
           cy="11"
           r="8"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M16.5 16.958L21.5 21.958"
-          stroke={strokeColor}
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"

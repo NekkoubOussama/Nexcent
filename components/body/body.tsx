@@ -7,12 +7,12 @@ import CommunityUpdates from "./communityUpdates";
 
 export default function Body() {
   return (
-    <section className="flex flex-col gap-[3rem] pb-42 ">
+    <main className="flex flex-col gap-[3rem] pb-42 ">
       <Unlock />
       <Achievement />
       <Calender />
       <Customer />
       <CommunityUpdates />
-    </section>
+    </main>
   );
 }
