@@ -5,7 +5,7 @@ import Button from "../button";
 
 export default function Hero() {
   return (
-    <section className="py-[6rem] flex justify-between px-[9rem] ">
+    <section className="pb-[6rem] pt-[11.5rem] flex justify-between px-[9rem] ">
       <div className="flex flex-col justify-center ">
         <h1 className=" text-d_grey">
           Lessons and insights <br />
