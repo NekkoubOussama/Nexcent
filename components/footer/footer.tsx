@@ -40,7 +40,7 @@ export default function Footer() {
           Copyright © 2020 Nexcent ltd.
           <span className="block pt-[0.5rem]">All rights reserved</span>
         </p>
-        <div className="flex gap-[1rem] flex-wrap mx-auto">
+        <div className="flex space-x-[1rem] flex-wrap mx-auto">
           {socialMedias.map((socialMedia, index) => (
             <Links
               key={index}
@@ -51,7 +51,7 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex justify-center gap-[1.875rem]">
+      <div className="flex justify-center space-x-[1.875rem]">
         <ul className="w-[10rem] ">
           <div className="pb-[2rem] text-headline4 ">Company</div>
           {companyLinks.map((link, index) => (
@@ -72,7 +72,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col gap-[0.625rem]  ">
+        <div className="flex flex-col space-y-[0.625rem]  ">
           <label className="text-headline4" htmlFor="Email">
             Stay up to date
           </label>

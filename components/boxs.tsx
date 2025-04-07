@@ -7,7 +7,7 @@ type Box1Props = { text: string; title: string; icon: StaticImageData };
 
 export function Box1(props: Box1Props) {
   return (
-    <div className="flex flex-col justify-center gap-2 px-6 py-8 rounded-lg bg-white shadow-2px w-[18.3125rem] ">
+    <div className="flex flex-col justify-center gap-2 px-6 py-8 rounded-lg bg-white shadow-2px w-[18.3125rem] animate-fade-left">
       <div className="flex flex-col justify-start items-center gap-4 ">
         <Image src={props.icon} alt="icon" />
         <h3>{props.title}</h3>
@@ -21,7 +21,7 @@ type Box2Props = { text: string; Icon: StaticImageData };
 
 export function Box2(props: Box2Props) {
   return (
-    <div className="relative w-[368px] h-[286px]  ">
+    <div className="relative w-[368px] h-[286px] animate-pop ">
       <Image
         width={368}
         height={286}

@@ -5,31 +5,31 @@
   --foreground: #171717;
 }
 
+/* Colors */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
   --color-primary: #4caf4f;
   --color-secondary: #263238;
   --color-info: #2194f3;
-  --color-Warning: #fbc02d;
-  --color-Error: #e53835;
-  --color-Success: #2e7d31;
+  --color-warning: #fbc02d;
+  --color-error: #e53835;
+  --color-success: #2e7d31;
+
   --color-shade1: #43a046;
   --color-shade2: #388e3b;
   --color-shade3: #237d31;
   --color-shade4: #1b5e1f;
   --color-shade5: #103e13;
+
   --color-tint1: #66bb69;
   --color-tint2: #81c784;
   --color-tint3: #a5d6a7;
   --color-tint4: #c8e6c9;
   --color-tint5: #e8f5e9;
+
   --color-grey: #717171;
-  --color-d_grey: #4d4d4d;
-  --color-l_grey: #89939e;
-  --color-b_grey: #abbed1;
+  --color-d-grey: #4d4d4d;
+  --color-l-grey: #89939e;
+  --color-b-grey: #abbed1;
   --color-silver: #f5f7fa;
   --color-nblack: #263238;
 }
@@ -37,9 +37,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: inter;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+
+/* Headings */
 h1 {
   font-weight: 600;
   font-size: 4rem;
@@ -61,6 +63,7 @@ h4 {
   line-height: 1.75rem;
 }
 
+/* Utility Classes — add these via @layer in your Tailwind setup */
 @theme shadows {
   --shadow-2px: 0px 2px 4px rgba(171, 190, 209, 0.6);
   --shadow-4px: 0px 4px 8px rgba(171, 190, 209, 0.4);
@@ -97,4 +100,61 @@ h4 {
 }
 @utility text-Mediumbody4 {
   @apply text-[12px] leading-[16px] font-medium;
+}
+
+/* Animation */
+@theme {
+  --animate-fade-in: fade-in 1s ease-in-out forwards;
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(55px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@theme {
+  --animate-fade-right: fade-right 1s ease-in-out forwards;
+  @keyframes fade-right {
+    0% {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@theme {
+  --animate-fade-left: fade-left 1s ease-in-out lazy;
+  @keyframes fade-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@theme {
+  --animate-pop: pop 1s ease-in-out forwards;
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      scale: 0;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
 }
