@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Blogo } from "../logo";
 import Button from "../button";
+import clsx from "clsx";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -11,8 +13,32 @@ const navLinks = [
   { label: "FAQ", href: "/FAQ" },
 ];
 export default function Header() {
+  const [navBg, setNavBg] = useState(false);
+
+  useEffect(() => {
+    const handler = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.offsetHeight;
+
+      const isAtBottom = windowHeight + scrollY + 1 >= documentHeight;
+
+      setNavBg(!isAtBottom && scrollY >= 95);
+    };
+    window.addEventListener("scroll", handler);
+    handler();
+    return () => {
+      window.removeEventListener("scroll", handler);
+    };
+  }, []);
+
   return (
-    <header className="flex items-center justify-between px-[6.5625rem] pt-[1.875rem] pb-[0.875rem] fixed top-0 left-0 right-0 z-50 bg-white  ">
+    <header
+      className={clsx(
+        "flex items-center justify-between px-[6.5625rem] pt-[1.875rem] pb-[0.875rem] fixed top-0 left-0 right-0 z-50 bg-white ",
+        navBg ? " backdrop-blur shadow-md " : ""
+      )}
+    >
       <Blogo />
       <ul className="flex items-center space-x-12 justify-center">
         {navLinks.map((link, index) => (
