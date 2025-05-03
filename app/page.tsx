@@ -1,8 +1,8 @@
 import Body from "@/components/body/body";
 import Frame16 from "@/components/footer/frame16";
-import Community from "@/components/headerGlobal/community";
-import Hero from "@/components/headerGlobal/hero";
-import Clients from "@/components/headerGlobal/ourclient";
+import Hero from "@/components/body/hero";
+import Community from "@/components/body/community";
+import Clients from "@/components/body/ourclient";
 
 export default function Home() {
   return (

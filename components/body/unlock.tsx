@@ -5,9 +5,9 @@ import Button from "../button";
 
 export default function Unlock() {
   return (
-    <div className="flex flex-row items-center justify-between py-13 px-[9rem] ">
+    <div className="flex flex-col lg:flex-row items-center justify-between py-13 w-[80%] mx-auto ">
       <Image src={rafiki} alt="image rafiki" />
-      <div className=" pr-15 max-w-[661px] w-full">
+      <div className=" lg:pr-15 max-w-[661px] w-full">
         <h2>The unseen of spending three years at Pixelgrade</h2>
         <p className=" text-Regularbody3 pt-2 pb-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet

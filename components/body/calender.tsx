@@ -5,9 +5,9 @@ import Button from "../button";
 
 export default function Calender() {
   return (
-    <div className="flex flex-row justify-between items-center px-[9rem]">
+    <div className="flex flex-col lg:flex-row justify-between items-center w-[80%] mx-auto">
       <Image src={Pana} alt={"Image"} />
-      <div className="pr-15 max-w-[661px] w-full">
+      <div className="lg:pr-15 max-w-[661px] w-full">
         <h2 className="text-d_grey">
           How to design your site footer like we did
         </h2>

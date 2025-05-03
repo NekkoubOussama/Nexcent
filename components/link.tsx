@@ -7,7 +7,7 @@ export default function Links(props: linkProps) {
   return (
     <Link
       href={props.link}
-      className="transition-transform duration-[350ms] hover:ease hover:scale-125 hover:opacity-95"
+      className="transition-transform duration-[350ms] ease-in-out hover:ease hover:scale-125 hover:opacity-95 "
     >
       <Image
         src={props.icon}

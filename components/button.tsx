@@ -1,18 +1,18 @@
-import React, { Children } from "react";
+import React from "react";
 import clsx from "clsx";
 import { cva, type VariantProps } from "class-variance-authority";
 
 const buttonVariants = cva(
-  "font-normal rounded-sm shadow-sm px-[2rem] w-fit gap-[0.5rem] disabled:bg-silver disabled:text-b_grey disabled:cursor-not-allowed cursor-pointer transition-all duration-200 ease-in-out hover:shadow-lg hover:scale-105",
+  "font-normal rounded-sm shadow-sm px-[2rem] w-fit gap-[0.5rem] border-transparent disabled:bg-silver disabled:text-b_grey disabled:cursor-not-allowed cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-[3px_3px_0px_rgba(0,0,0,0.7)] hover:border hover:translate-x-[-3px] hover:translate-y-[-3px] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none",
   {
     variants: {
       intent: {
         primary:
-          " bg-primary text-white  hover:bg-tint1 focus:border-d_grey focus:border active:bg-shade1",
+          "bg-primary text-white hover:bg-shade1 hover:border-[#4d4d4d] focus:border-d_grey active:bg-shade1 ",
         secondary:
-          " bg-white text-primary border border-primary hover:bg-silver focus:border focus:border-l_grey active:border-none",
+          " bg-white text-primary border border-[#4caf4f] hover:border-[#4caf4f] hover:bg-silver focus:border focus:border-l_grey active:border-none",
         tertiary:
-          " bg-white/20 text-primary hover:bg-silver focus:border focus:border-d_grey active:bg-tint5",
+          " bg-white/20 text-primary hover:bg-silver hover:border-[#4caf4f] focus:border focus:border-d_grey active:bg-tint5",
       },
       size: {
         normal: "text-[1.125rem] py-[1rem] h-[3.5rem] ",

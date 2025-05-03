@@ -5,8 +5,8 @@ import Button from "../button";
 
 export default function Hero() {
   return (
-    <section className="pb-[6rem] pt-[14.5rem] flex justify-between px-[9rem] ">
-      <div className="flex flex-col justify-center animate-fade-in ">
+    <section className="pb-[6rem] pt-[14.5rem] flex justify-between w-[80%] mx-auto ">
+      <div className="flex flex-col justify-center fade-in ">
         <h1 className=" text-d_grey">
           Lessons and insights <br />
           <span className=" text-primary">from 8 years</span>
@@ -22,7 +22,7 @@ export default function Hero() {
         src={Illustration}
         alt="Picture"
         quality={100}
-        className=" animate-fade-right"
+        className="  fade-in"
       />
     </section>
   );

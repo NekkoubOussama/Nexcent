@@ -24,14 +24,14 @@ const boxContents = [
 
 export default function Community() {
   return (
-    <section className=" justify-center items-center text-center px-[9rem]">
+    <section className=" justify-center items-center text-center w-[80%] mx-auto">
       <h2>
         Manage your entire community <br /> in a single system
       </h2>
-      <p className="text-Regularbody2 text-grey pt-[0.5rem]">
+      <p className="text-Regularbody2 text-grey pt-[0.5rem] mb-2">
         Who is Nextcent suitable for?
       </p>
-      <div className="flex flex-row justify-between items-center pt-4">
+      <div className="flex flex-row justify-between items-center py-4">
         {boxContents.map((boxContent, index) => (
           <Box1
             key={index}

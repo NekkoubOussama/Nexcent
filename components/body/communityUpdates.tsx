@@ -21,7 +21,7 @@ const contents = [
 
 export default function CommunityUpdates() {
   return (
-    <div className="flex flex-col justify-center items-center px-[9rem]">
+    <div className="flex flex-col justify-center items-center w-[80%] mx-auto">
       <h2>Caring is the new marketing</h2>
       <p className="text-Regularbody2 text-grey  text-center px-60 pt-2 pb-4">
         The Nexcent blog is the best place to read about the latest membership
@@ -31,7 +31,12 @@ export default function CommunityUpdates() {
       </p>
       <div className="flex flex-row justify-between gap-y-28 flex-wrap w-full items-center">
         {contents.map((content, index) => (
-          <Box2 text={content.text} Icon={content.Icon} key={index} />
+          <Box2
+            text={content.text}
+            Icon={content.Icon}
+            key={index}
+            index={index}
+          />
         ))}
       </div>
     </div>
