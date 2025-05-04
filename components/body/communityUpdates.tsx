@@ -22,8 +22,8 @@ const contents = [
 export default function CommunityUpdates() {
   return (
     <div className="flex flex-col justify-center items-center w-[80%] mx-auto">
-      <h2>Caring is the new marketing</h2>
-      <p className="text-Regularbody2 text-grey  text-center px-60 pt-2 pb-4">
+      <h2 className="text-center">Caring is the new marketing</h2>
+      <p className="text-Regularbody2 text-grey lg:w-[55%] w-[90%] text-center mx-auto pt-2 pb-5">
         The Nexcent blog is the best place to read about the latest membership
         insights, trends and more. See who's joining the community, read about
         how our community are increasing their membership income and lot's

@@ -42,6 +42,7 @@ export function Counts(props: countsprops) {
         src={props.icon}
         alt="Icon"
         className={clsx("opacity-0", inView ? "fade-left " : "")}
+        width={48}
       />
       <div
         className={clsx("opacity-0", inView ? "pop " : "")}
@@ -76,7 +77,7 @@ export function Box2(props: Box2Props) {
       <div
         ref={ref}
         className={clsx(
-          "flex flex-col justify-center items-center gap-2 p-4 rounded-lg bg-silver shadow-8px h-44 w-[316px] overflow-auto absolute bottom-[-25%] left-[6%] opacity-0 ",
+          "flex flex-col justify-center items-center gap-2 p-4 rounded-lg bg-silver shadow-8px h-44 w-[88%] overflow-auto absolute bottom-[-25%] left-1/2 -translate-x-1/2 opacity-0 ",
           inView ? "pop " : ""
         )}
         style={{ animationDelay: `${(props.index + 2) * 250}ms` }}

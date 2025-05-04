@@ -24,7 +24,7 @@ export default function Achievement() {
             We reached here with our hard work and dedication
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-10 p-1">
+        <div className="grid sm:grid-cols-2 gap-10 p-1 grid-cols-1">
           {countsContents.map((countsContent, index) => (
             <Counts
               index={index}

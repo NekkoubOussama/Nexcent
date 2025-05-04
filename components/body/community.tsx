@@ -31,7 +31,7 @@ export default function Community() {
       <p className="text-Regularbody2 text-grey pt-[0.5rem] mb-2">
         Who is Nextcent suitable for?
       </p>
-      <div className="flex flex-row justify-between items-center py-4">
+      <div className="flex flex-row flex-wrap justify-around items-center py-4 gap-5 mx-auto">
         {boxContents.map((boxContent, index) => (
           <Box1
             key={index}

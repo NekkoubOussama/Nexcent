@@ -7,7 +7,7 @@ export default function Calender() {
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center w-[80%] mx-auto">
       <Image src={Pana} alt={"Image"} />
-      <div className="lg:pr-15 max-w-[661px] w-full">
+      <div className="lg:pr-15 max-w-[661px] w-full pt-2">
         <h2 className="text-d_grey">
           How to design your site footer like we did
         </h2>

@@ -4,11 +4,11 @@ import Button from "../button";
 export default function Frame16() {
   return (
     <section className="bg-silver">
-      <div className="flex flex-col py-[2rem] gap-[2rem] items-center bg-silver w-[80%] mx-auto">
-        <h1 className="text-center w-[800px]">
+      <div className="flex flex-col py-8 gap-8 items-center w-[80%] max-w-screen-lg mx-auto">
+        <h1 className="text-center  font-semibold max-w-3xl">
           Pellentesque suscipit fringilla libero eu.
         </h1>
-        <Button intent={"primary"} size={"normal"} icontype="arrow">
+        <Button intent="primary" size="normal" icontype="arrow">
           Get a Demo
         </Button>
       </div>

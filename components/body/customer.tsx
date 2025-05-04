@@ -14,8 +14,8 @@ const clientsIcons = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 export default function Customer() {
   return (
     <section className="bg-silver">
-      <div className="flex flex-row justify-between items-center gap-19 bg-silver py-8 w-[80%] mx-auto">
-        <Image src={Picture} alt={"Image"} width={326} height={326} />
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-19 bg-silver py-8 w-[80%] mx-auto">
+        <Image src={Picture} alt={"Image"} />
         <div className=" max-w-[748px] w-full">
           <p className="text-Mediumbody2 text-grey ">
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
@@ -34,7 +34,7 @@ export default function Customer() {
             British Dragon Boat Racing Association
           </p>
           <div className="flex flex-row flex-wrap gap-8 pt-8 items-center justify-between w-auto">
-            <div className=" justify-between items-center flex gap-7 ">
+            <div className=" justify-between items-center flex gap-7 flex-wrap ">
               {clientsIcons.map((clientsIcon, index) => (
                 <Image key={index} src={clientsIcon} alt={clientsIcon} />
               ))}
