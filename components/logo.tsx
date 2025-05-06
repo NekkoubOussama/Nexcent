@@ -1,7 +1,7 @@
 import React from "react";
 
 export function Blogo({
-  width = "155",
+  width = "144",
   height = "24",
 }: {
   width?: string;

@@ -76,14 +76,14 @@ export default function Footer() {
           <label className="text-headline4" htmlFor="Email">
             Stay up to date
           </label>
-          <div className="relative">
+          <form action="/your-endpoint" method="POST" className="relative">
             <input
               type="email"
               name="Email"
               id="Email"
               placeholder="Your email address"
               required
-              className="peer text-Regularbody3 bg-white/20 pl-[0.75rem] pr-10 pt-[0.5625rem] pb-[0.6875rem] rounded-lg w-full invalid:border-red invalid:text-red focus:outline focus:outline-primary"
+              className="text-Regularbody3 bg-white/20 pl-[0.75rem] pr-10 pt-[0.5625rem] pb-[0.6875rem] rounded-lg w-full focus:outline focus:outline-primary  invalid:focus:outline-error invalid:focus:text-error"
             />
             <button
               type="submit"
@@ -91,7 +91,7 @@ export default function Footer() {
             >
               <Image src={Send} alt="Submit email" className="w-5 h-5" />
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
