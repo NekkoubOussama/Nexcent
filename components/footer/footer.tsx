@@ -83,7 +83,7 @@ export default function Footer() {
               id="Email"
               placeholder="Your email address"
               required
-              className="text-Regularbody3 bg-white/20 pl-[0.75rem] pr-10 pt-[0.5625rem] pb-[0.6875rem] rounded-lg w-full focus:outline focus:outline-primary  invalid:focus:outline-error invalid:focus:text-error"
+              className="text-Regularbody3 bg-white/20 pl-[0.75rem] pr-10 pt-[0.5625rem] pb-[0.6875rem] rounded-lg w-full focus:outline focus:outline-primary "
             />
             <button
               type="submit"

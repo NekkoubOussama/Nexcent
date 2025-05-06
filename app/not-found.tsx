@@ -7,7 +7,7 @@ import { LinkButton } from "@/components/link";
 
 export default function Custom404() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 ">
+    <div className="min-h-screen flex items-center justify-center px-4 pt-5 ">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
