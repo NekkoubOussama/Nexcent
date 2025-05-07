@@ -25,10 +25,25 @@ const supportLinks = [
 ];
 
 const socialMedias = [
-  { text: "Instagrame", link: "https://www.instagram.com/", icon: Instagrame },
-  { text: "dribbble", link: "https://dribbble.com/", icon: Dribbble },
-  { text: "X", link: "https://x.com/", icon: X },
-  { text: "Youtube", link: "https://www.youtube.com/", icon: Youtube },
+  {
+    text: "Instagrame",
+    link: "https://www.instagram.com/",
+    icon: Instagrame,
+    hover: "hover:bg-fuchsia-500",
+  },
+  {
+    text: "dribbble",
+    link: "https://dribbble.com/",
+    icon: Dribbble,
+    hover: "hover:bg-pink-500",
+  },
+  { text: "X", link: "https://x.com/", icon: X, hover: "hover:bg-black" },
+  {
+    text: "Youtube",
+    link: "https://www.youtube.com/",
+    icon: Youtube,
+    hover: "hover:bg-red-600",
+  },
 ];
 
 export default function Footer() {
@@ -48,6 +63,7 @@ export default function Footer() {
                 icon={socialMedia.icon}
                 text={socialMedia.text}
                 link={socialMedia.link}
+                hover={socialMedia.hover}
               />
             ))}
           </div>
