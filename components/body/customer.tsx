@@ -8,6 +8,7 @@ import Logo3 from "../../public/Clients/Logo(7).svg";
 import Logo4 from "../../public/Clients/Logo(8).svg";
 import Logo5 from "../../public/Clients/Logo(9).svg";
 import Logo6 from "../../public/Clients/Logo(10).svg";
+import { SlideIn } from "../animation";
 
 const clientsIcons = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
@@ -15,8 +16,11 @@ export default function Customer() {
   return (
     <section className="bg-silver">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-19 bg-silver py-8 w-[80%] mx-auto">
-        <Image src={Picture} alt={"Image"} />
-        <div className=" max-w-[748px] w-full">
+        <SlideIn direction="right" delay={0.3}>
+          <Image src={Picture} alt={"Image"} />
+        </SlideIn>
+
+        <SlideIn direction="left" className=" max-w-[748px] w-full">
           <p className="text-Mediumbody2 text-grey ">
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
@@ -43,7 +47,7 @@ export default function Customer() {
               Meet all customers
             </Button>
           </div>
-        </div>
+        </SlideIn>
       </div>
     </section>
   );

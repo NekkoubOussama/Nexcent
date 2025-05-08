@@ -2,12 +2,15 @@ import React from "react";
 import Image from "next/image";
 import Pana from "../../public/pana.svg";
 import Button from "../button";
+import { SlideIn } from "../animation";
 
 export default function Calender() {
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center w-[80%] mx-auto">
-      <Image src={Pana} alt={"Image"} />
-      <div className="lg:pr-15 max-w-[661px] w-full pt-2">
+      <SlideIn direction="right" delay={0.3}>
+        <Image src={Pana} alt={"Image"} />
+      </SlideIn>
+      <SlideIn direction="left" className="lg:pr-15 max-w-[661px] w-full pt-2">
         <h2 className="text-d_grey">
           How to design your site footer like we did
         </h2>
@@ -24,7 +27,7 @@ export default function Calender() {
         <Button size={"medium"} intent={"primary"}>
           Learn More
         </Button>
-      </div>
+      </SlideIn>
     </div>
   );
 }

@@ -60,3 +60,35 @@ export function TypewriterText({ text }: { text: string }) {
     </motion.div>
   );
 }
+
+type SlideInProps = {
+  children: React.ReactNode;
+  direction?: "left" | "right";
+  delay?: number;
+  className?: string;
+};
+
+export function SlideIn({
+  children,
+  direction = "left",
+  delay = 0,
+  className = "",
+}: SlideInProps) {
+  const xStart = direction === "left" ? -150 : 150;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: xStart }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{
+        duration: 0.7,
+        ease: "easeInOut",
+        delay,
+      }}
+      viewport={{ once: true, amount: 0.6 }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
