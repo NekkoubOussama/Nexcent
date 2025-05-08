@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { cva, type VariantProps } from "class-variance-authority";
 
 const buttonVariants = cva(
-  "font-normal rounded-sm shadow-sm px-[2rem] w-fit gap-[0.5rem] border-transparent disabled:bg-silver disabled:text-b_grey disabled:cursor-not-allowed cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-[3px_3px_0px_rgba(0,0,0,0.7)] hover:border hover:translate-x-[-3px] hover:translate-y-[-3px] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none",
+  "font-normal rounded-sm shadow-sm px-[2rem] w-fit gap-[0.5rem] border border-transparent disabled:bg-silver disabled:text-b_grey disabled:cursor-not-allowed cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-[3px_3px_0px_rgba(0,0,0,0.7)] hover:border hover:translate-x-[-3px] hover:translate-y-[-3px] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none",
   {
     variants: {
       intent: {
