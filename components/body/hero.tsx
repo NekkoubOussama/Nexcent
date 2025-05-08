@@ -22,7 +22,7 @@ export default function Hero() {
         src={Illustration}
         alt="Picture"
         quality={100}
-        className=" fade-in max-lg:hidden"
+        className=" fade-in max-lg:hidden delay-300 opacity-0"
       />
     </section>
   );

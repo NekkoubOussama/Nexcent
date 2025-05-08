@@ -19,6 +19,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    document.body.classList.toggle("overflow-hidden", open);
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [open]);
+  useEffect(() => {
     const handler = () => {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
