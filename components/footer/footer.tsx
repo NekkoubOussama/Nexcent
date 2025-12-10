@@ -48,7 +48,7 @@ const socialMedias = [
 
 export default function Footer() {
   return (
-    <section className="py-[4rem] text-white bg-nblack pt-30 pb-11 mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="py-[4rem] text-white bg-nblack pt-30 pb-11 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[90%] mx-auto  ">
         <div className="mt-3 sm:row-start-2 sm:col-start-1 md:col-start-auto md:row-start-auto">
           <Wlogo />
@@ -110,6 +110,6 @@ export default function Footer() {
           </form>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

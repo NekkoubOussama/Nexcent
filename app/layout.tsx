@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`mx-auto  ${inter.variable}`}>
+      <body className={`${inter.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

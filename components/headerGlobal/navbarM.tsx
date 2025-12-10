@@ -1,4 +1,5 @@
 import { AnimatePresence, delay, motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import React from "react";
 
 const navLinks = [
@@ -19,7 +20,7 @@ export default function NavbarM({ open }: { open: boolean }) {
           animate="visible"
           exit="exit"
           variants={bgVariants}
-          className="bg-black/40 fixed top-22.5 left-0 w-full h-screen z-30 transform transition-all ease-in-out duration-500 py-6 flex justify-center lg:hidden "
+          className="bg-black/40 fixed top-22.5 left-0 w-dvw h-screen z-30 transform transition-all ease-in-out duration-500 py-6 flex justify-center lg:hidden "
         >
           <motion.ul
             layout
@@ -45,7 +46,7 @@ export default function NavbarM({ open }: { open: boolean }) {
     </AnimatePresence>
   );
 }
-const bgVariants = {
+const bgVariants: Variants = {
   hidden: {
     opacity: 0,
     scale: 0,
@@ -66,7 +67,7 @@ const bgVariants = {
   },
 };
 
-const menuVariants = {
+const menuVariants: Variants = {
   hidden: {
     y: "25vh",
     opacity: 0,
