@@ -1,12 +1,11 @@
 import React from "react";
 import { Wlogo } from "../logo";
-import Image from "next/image";
 import Links from "../link";
 import X from "../../public/Social Icons/Social Icons 2.svg";
 import Instagrame from "../../public/Social Icons/Social Icons 4.svg";
 import Youtube from "../../public/Social Icons/Social Icons 3.svg";
 import Dribbble from "../../public/Social Icons/Social Icons 1.svg";
-import Send from "../../public/ICON/send.svg";
+import NewsletterForm from "./form";
 
 const companyLinks = [
   { label: "About us", href: "/" },
@@ -92,22 +91,7 @@ export default function Footer() {
           <label className="text-headline4" htmlFor="Email">
             Stay up to date
           </label>
-          <form action="/your-endpoint" method="POST" className="relative">
-            <input
-              type="email"
-              name="Email"
-              id="Email"
-              placeholder="Your email address"
-              required
-              className="text-Regularbody3 bg-white/20 pl-[0.75rem] pr-10 pt-[0.5625rem] pb-[0.6875rem] rounded-lg w-full focus:outline focus:outline-primary "
-            />
-            <button
-              type="submit"
-              className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"
-            >
-              <Image src={Send} alt="Submit email" className="w-5 h-5" />
-            </button>
-          </form>
+          <NewsletterForm />
         </div>
       </div>
     </footer>
