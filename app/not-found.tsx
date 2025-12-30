@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import P404 from "../public/404.jpg";
 import { LinkButton } from "@/components/link";
@@ -22,7 +21,7 @@ export default function Custom404() {
           viewport={{ once: true }}
           className="text-[5rem] font-semibold text-primary"
         >
-          <Image src={P404} alt="404" aria-hidden="true" />
+          <Image src={P404} alt="404" aria-hidden="true" priority />
         </motion.h1>
 
         <motion.h2
