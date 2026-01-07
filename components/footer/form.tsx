@@ -21,7 +21,7 @@ export default function NewsletterForm() {
         className="text-Regularbody3 bg-white/20 pl-[0.75rem] pr-10 pt-[0.5625rem] pb-[0.6875rem] rounded-lg w-full focus:outline focus:outline-primary "
       />
       {state.error?.Email && (
-        <p className="text-red-400 text-Regularbody3">
+        <p className="text-red-400 text-Regularbody3 absolute p-1">
           {state.error.Email?.join(", ")}
         </p>
       )}
